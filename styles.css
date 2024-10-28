@@ -328,3 +328,29 @@ button:hover:not(.hidden) span::after{
     /* transition-delay: -0.4s; */
 }
 
+@media screen and (max-width:500px){
+    .major_container {
+        width: 100%;
+    }
+
+    
+    label#email_label {
+        top: 48.3%;
+    }
+
+    label#pass_label {
+        top: 61.5%;
+    }
+
+    label#email_label2 {
+        top: 62.5%;
+    }
+
+    label#pass_label2 {
+        top: 75.5%;
+    }
+
+    label#name_label {
+        top: 49.5%;
+    }
+}
