@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+
+.major_container{
+    margin: auto;
+    transform: translatey(25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 768px;
+    height: 480px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.55);
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.icons a i { 
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.37);
+    border: 1px solid #33333334;
+    padding: 10px;
+    margin-left: 10px;
+}
+a {
+    text-decoration: none;
+}
+i:active {
+    /* color-scheme: #4285F4,#DB4437,#F4B400,#0F9D58; */
+    color: blue;
+}
+
+.tooltip {
+    position: relative;
+    /* display: inline-block; */
+}
+.tooltip_text {
+    font-size: 0.7rem;
+    position: absolute;
+    visibility: hidden;
+    width: 120px;
+    top: -70%;
+    left: -30px;
+    padding: 3px 0;
+    background-color: rgba(0, 0, 0, 0.606);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.tooltip_text::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 7px;
+    border-color:  rgba(0, 0, 0, 0.606) transparent transparent transparent;
+    left: 50%;
+    margin-left: -6px;
+    top: 98%;
+    z-index: -1;
+}
+
+.g_tooltip:hover .tooltip_text {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+.f_tooltip:hover .tooltip_text1 {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1.5s ease;
+    left: 25px;
+    width: 130px;
+}
+.gi_tooltip:hover .tooltip_text2 {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1.5s ease;
+    left: 76px;
+}
+.l_tooltip:hover .tooltip_text3 {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1.5s ease;
+    left: 127px;
+    width: 130px;
+}
+
+.singin_container {
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    padding-top: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transition: all 2s ease-in-out;
+
+}
+
+p, h1, .icons, form {
+    margin-top: 20px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+input{
+    border: 1.2px solid blue;
+    /* box-shadow: 1px 1px 1px 1px blue; */
+    border-radius: 5px;
+    /* background-color: #3333331e; */
+    padding: 10px 15px;
+    font-size: 1rem;
+    width: 80%;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 3px 3px 15px 4px rgba(12, 46, 215, 0.37);
+}
+
+label {
+    font-size: 0.9rem;
+    position: absolute;
+    background-color: white;
+    left: 54px;
+}
+
+label#email_label {
+    top: 44.3%;
+}
+
+label#pass_label {
+    top: 57.5%;
+}
+
+label#email_label2 {
+    top: 50%;
+}
+
+label#pass_label2 {
+    top: 63%;
+}
+
+label#name_label {
+    top: 37%;
+}
+
+
+button{
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 10px 45px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #512da8;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    vertical-align: middle;
+    width: 180px;
+}
+
+button span {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+button:not(.hidden) span::after {
+    content: '\00bb';
+    font-size: 26px;
+    position: absolute;
+    top: -9px;
+    right: -15px;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+button:hover:not(.hidden) span {
+    padding-right: 25px;
+}
+
+button:hover:not(.hidden) span::after{
+    opacity: 1;
+    right: -5px;
+}
+
+.hidden {
+    box-shadow: 0 6px rgba(0, 0, 0, 0.541);
+}
+
+.hidden:active {
+    transform: translateY(4px);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.333);
+}
+
+.singup_container {
+    position: absolute;
+    /* z-index: 8; */
+    width: 50%;
+    height: 100%;
+    left: 0;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    /* transform: translateX(-95%);     */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+
+}
+
+.signup_side {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    padding: 120px 20px 0;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    border-radius: 150px 0 0 100px;
+    background-color: #512da8;
+    /* transform: translateX(95%); */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+.signup_side p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sigin_side p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.signin_side {
+    position: absolute;
+    /* right: 0; */
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    padding: 120px 20px 0;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    border-radius: 150px 0 0 100px;
+    background-color: #512da8;
+    transform: translateX(50%);
+    transition: all 2s ease-in-out;
+
+}
+
+.hidden {
+    margin-top: 30px;
+    border: 1px solid #fff;
+}
+
+.signin_active {
+    /* display: none; */
+    z-index: 1;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 2s ease-in-out;
+    /* transition-delay: 0.1s; */
+}
+
+.signup_active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 15;
+    transform: translateX(100%);
+    transition: all 2s ease-in-out;
+    /* transition-delay: -0.4s; */
+}
+
+.signin_side_active {
+    opacity: 0;
+    z-index: 1;
+    transform: translateX(-50%);
+    border-radius: 0 150px 100px 0;
+    transition: all 2s ease-in-out;
+}
+
+.signup_side_active {
+    visibility: visible;    
+    opacity: 1;
+    z-index: 15;
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+    transition: all 2s ease-in-out;
+    /* transition-delay: -0.4s; */
+}
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <title>Login & Registration</title>
+    <!-- <style>
+        
+        .bounce:hover .anm{
+            animation: bounce 0.6s ease infinite;
+            display: inline-block;
+        }
+        
+        .bounce span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .bounce span:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        .bounce span:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        .bounce span:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+        .bounce span:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+        .bounce span:nth-child(7) {
+            animation-delay: 0.7s;
+        }
+        .bounce span:nth-child(8) {
+            animation-delay: 0.8s;
+        }
+        .bounce span:nth-child(9) {
+            animation-delay: 0.9s;
+        }
+        .bounce span:nth-child(10) {
+            animation-delay: 0.10s;
+        }
+        .bounce span:nth-child(11) {
+            animation-delay: 0.11s;
+        }
+        .bounce span:nth-child(12) {
+            animation-delay: 0.12s;
+        }
+        .bounce span:nth-child(13) {
+            animation-delay: 0.13s;
+        }
+        @keyframes bounce {
+            0%,100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+    </style> -->
+</head>
+
+<body>
+
+<div class="major_container">
+    <div class="singin_container" id="signin_contnr">
+
+        <h1>Sign In</h1>
+        <div class="icons tooltip">
+            <a href="#" class="g_tooltip"><i class="fa-brands fa-google-plus-g"></i>
+                <div class="tooltip_text">
+                    <span>Login With Google</span>
+                </div>
+            </a>
+                <a href="#" class="f_tooltip"><i class="fa-brands fa-facebook"></i>
+                    <div class="tooltip_text tooltip_text1">
+                        <span>Login With Facebook</span>
+                    </div>
+                </a>
+                <a href="#" class="gi_tooltip"><i class="fa-brands fa-github"></i>
+                    <div class="tooltip_text tooltip_text2">
+                        <span>Login With GitHub</span>
+                    </div>
+                </a>
+                <a href="#" class="l_tooltip tooltip_text3"><i class="fa-brands fa-linkedin"></i>
+                    <div class="tooltip_text tooltip_text3">
+                        <span>Login With Linkedin</span>
+                    </div>
+                </a>
+        </div>
+            <p>or use your email for Sign In</p>
+        <form>
+            <label for="" id="email_label">Email</label>
+            <input type="email" placeholder="" required>
+            <label for="" id="pass_label">Password</label>
+            <input type="password" placeholder="" required>
+            <a href="#">Forget Your Password?</a>
+            <button><span>Sign In</span></button>
+        </form>
+    </div>
+
+    <div class="singup_container" id="signup_contnr">
+        <h1>Create an Account</h1>
+        <div class="icons tooltip">
+            <a href="#" class="g_tooltip"><i class="fa-brands fa-google-plus-g"></i>
+                <div class="tooltip_text">
+                    <span>Login With Google</span>
+                </div>
+            </a>
+                <a href="#" class="f_tooltip"><i class="fa-brands fa-facebook"></i>
+                    <div class="tooltip_text tooltip_text1">
+                        <span>Login With Facebook</span>
+                    </div>
+                </a>
+                <a href="#" class="gi_tooltip"><i class="fa-brands fa-github"></i>
+                    <div class="tooltip_text tooltip_text2">
+                        <span>Login With GitHub</span>
+                    </div>
+                </a>
+                <a href="#" class="l_tooltip tooltip_text3"><i class="fa-brands fa-linkedin"></i>
+                    <div class="tooltip_text tooltip_text3">
+                        <span>Login With Linkedin</span>
+                    </div>
+                </a>
+        </div>
+        <p>or use your email for registration</p>
+        <form>
+            
+            <label for="" id="name_label">Name</label>
+            <input type="text" placeholder="" required>
+            <label for="" id="email_label2">Email</label>
+            <input type="email" placeholder="">
+            <label for="" id="pass_label2">Password</label>
+            <input type="password" placeholder="" required>
+            <button><span>Sign Up</span></button>
+        </form>
+    </div>
+
+    <div class="signup_side" id="signup_side">
+        <h1>Welcome Back!</h1>
+        <p>Enter your personal details to use all of site features...</p>
+        <button class="hidden" id="signin_button"><span>Sign In</span></button>
+    </div>
+
+    <div class="signin_side" id="signin_side">
+        <h1>Hello, Friend!</h1>
+        <!-- <h1 class="bounce">
+            <span class="anm">H</span>
+            <span class="anm">E</span>
+            <span class="anm">L</span>
+            <span class="anm">L</span>
+            <span class="anm">O</span>
+            <span class="anm">,</span>
+            <span class="anm">F</span>
+            <span class="anm">R</span>
+            <span class="anm">I</span>
+            <span class="anm">E</span>
+            <span class="anm">N</span>
+            <span class="anm">D</span>
+            <span class="anm">!</span>
+        </h1> -->
+        <p>Register with your personal details to use all of site features...</p>
+        <button class="hidden" id="signup_button"><span>Sign Up</span></button>
+    </div>    
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
